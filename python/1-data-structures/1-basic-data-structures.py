@@ -27,7 +27,13 @@ print ("Starting string data types")
 example="testing"
 two='testing'
 print(two[2]) # Pick a character out of string 
+
+# String slicing
+# [firstIndex(included),lastIndex(exluded),skipValue] 
+# Negative numbers start counting from the right
 print(two[::-1])
+print("Slice2:",two[::1])
+print("Reversed",two[::-1])
 
 #Iterator object: Creates an object that allows you to loop through it
 #You can create a custom object with __iter__ and __next__ functions
@@ -42,5 +48,45 @@ while True:
     except StopIteration:
         break
 
+# Sequence types: list, tuple, range
+
+# Lists
+# Enclosed in square brackets []
+# Are mutable
+ex_list=[1,2,4,5,66,3,3,2]
+
+# List comprehension
+new_list = [x*x for x in ex_list  if x ==2]
+
+print(new_list)
 
 
+# Ranges
+range(10)
+print(range(5))
+
+for i in range(10):
+    print(i)
+
+# Tuples
+# Denoted by ()
+# immutable and generally faster
+tuple_example =(4,2,1)
+print(tuple_example)
+
+#Set data type
+# Denoted by {}
+# Unordered
+# Duplicates are represented only once
+
+set_example=  {'5','3','dog','test'}
+print('5' in set_example) #Checks for set membership
+print ('hai' in set_example)
+
+#Dict data type
+#Denoted by {}
+#Mutable, unordered
+# Used to represent key-value pairs
+
+dict_example={'test1':334,'test2':22}
+print(dict_example)
