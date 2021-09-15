@@ -1,0 +1,15 @@
+List of commonly used bash commands
+
+ls 
+cd 
+rm 
+mv
+cat
+touch
+gedit
+vim
+echo
+grep
+sudo
+su
+export
